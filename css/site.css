@@ -1,0 +1,152 @@
+/*### Normalisations and Typography  ###*/
+html, body {
+  margin:0;
+  height: 0;
+  font-size: 100%;
+  line-height: 1.5;
+}
+@import url(https://fonts.googleapis.com/css?family=lora);
+@import url(https://fonts.googleapis.com/css?family=lato:400,300,300italic,400italic,700,700italic);
+* {
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: #2A3132;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.8;
+}
+/*### Grid Setup ###*/
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*padding:1rem 2.5%*/
+}
+.row {
+  width:100%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.row:before,
+.row:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+
+/*Site Specific Styling*/
+#hero-section {
+  background-color: #fff;
+  height:50vh;
+  background-image: url("../img/hero-bg1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#hero-navigation {
+  border-bottom:1px solid #dbdbdb;
+  padding: 0 1rem;
+  background-color: #fff;
+  position:fixed;
+  z-index: 1;
+}
+
+.logo {
+  float:left;
+  width:17rem;
+  padding:0.6rem 0;
+  display: inline-block;
+}
+#sticky-menu {
+  float:right;
+}
+.menu {
+  list-style: none;
+}
+
+.menu-item {
+  display:inline-block;
+  padding: 0 1rem;
+}
+.menu-item a {
+  text-decoration: none;
+  font-weight: 300;
+}
+.menu-item:hover{
+  background-color:#dbdbdb;
+}
+.menu-item:active {
+  background-color: black;
+}
+.mn-item-active a {
+  color:#763626;
+  font-weight: 400;
+}
+#hero-panel {
+  /*width:100%;*/
+  margin:0 auto;
+  text-align: center;
+  /*padding:1rem 2rem 2rem 2rem;*/
+  /*background-color: rgba(255,255,255,0.7);*/
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+#hp-description {
+  font-weight: 400;
+}
+#hp-learn-more {
+  font-weight: 400;
+  text-decoration: none;
+  padding:0.5rem 1.5rem;
+  background-color: #336B87; /*#233237;*/
+  color:#fff;
+}
+#hp-learn-more:hover {
+  background-color: #90AFC5;
+  color:#2A3132;
+}
+#hp-learn-more:active {
+  background-color: #763626;
+  color:#fff;
+}
+/* Media Queries */
+@media only screen and (min-width: 33.75em) {  /* 540px */
+
+}
+
+@media only screen and (min-width: 48em) {  /* 768px */
+
+}
+@media only screen and (min-width: 60em) { /* 960px */
+
+}
