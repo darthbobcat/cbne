@@ -2,18 +2,18 @@
 html, body {
   margin:0;
   height: 0;
-  /*font-size: 100%;*/
-  /*line-height: 1.5;*/
+  font-size: 100%;
+  line-height: 1.5;
 }
-/*@import url(https://fonts.googleapis.com/css?family=lora);*/
+@import url(https://fonts.googleapis.com/css?family=lora);
 @import url(https://fonts.googleapis.com/css?family=lato:400,300,300italic,400italic,700,700italic);
 * {
   font-family: 'Lato', Helvetica, sans-serif;
   color: #2A3132;
-  /*line-height: 1.5;*/
+  line-height: 1.5;
   box-sizing: border-box;
 }
-/*h1 {
+h1 {
   font-size: 2.5rem;
 }
 
@@ -41,7 +41,7 @@ p {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 1.8;
-}*/
+}
 /*### Grid Setup ###*/
 .container {
   width: 100%;
@@ -63,6 +63,7 @@ p {
 /*Responsive menu classes */
 .menu {
   list-style: none;
+  /*margin:0;*/
   padding:0;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -97,92 +98,95 @@ p {
   width:25%;
   margin:0 auto;
 }
-/*Header styling*/
-#main-nav-container {
-  height:50vh;
-  background-image: url("../img/circles-and-roundabouts.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size:auto;
-}
+/*General header styling*/
 .logo {
   width:100%;
   padding:0.5rem;
 }
 
 #main-nav-bar {
-  /*position: fixed;*/
+  position: fixed;
   background-color: #fff;
   width:100%;
   margin:0 auto;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.1);
 }
-/*About us*/
-#about-us {
-  width:100%;
-  height:90vh;
-  background-color: #4a4a4a;
-  /*margin:0;*/
+.spacer {
+  margin-top:120px;
 }
-
+.vertical-rule {
+  display:none;
+}
 /* Media Queries */
 @media only screen and (min-width: 33.75em) {  /* 540px */
-  /*General header styling*/
-  .logo {
-    width:40%;
-    display: block;
-    margin:0 auto;
-  }
   /*Responsive menu classes */
   .menu {
-    display:block !important; /*jquery toggle fix*/
-    border:none;
+    /*border: none;*/
+    width:auto;
+    display: block !important; /* jquery toggle fix*/
+    margin:0 auto;
     text-align: center;
   }
   .menu-item {
     display: inline-block;
-    padding:0.25rem 0.5rem;
-    margin:0;
     width:auto;
+    text-align: center;
+    padding:0.5rem;
+    margin:0 auto;
   }
   .responsive-menu-button {
     display: none;
   }
+  /*General header styling*/
+  .logo {
+    display:block;
+    width:17rem;
+  }
+  .spacer {
+    margin-top: auto;
+  }
+  #main-nav-bar {
+    content: "";
+    display: table;
+    position: relative;
+    width:100%;
+  }
 }
 
 @media only screen and (min-width: 48em) {  /* 768px */
-  /*General header styling*/
-
-.logo{
-  width:30%;
-}
-
-}
-@media only screen and (min-width: 60em) { /* 960px */
-  #main-nav-bar {
-    max-width:75em;
-    content:"";
-    position:relative;
-    display: table;
-    margin:0 auto;
-  }
-  .logo {
-    width:auto;
-    height:100%;
-    padding: 0.2rem 0.5rem;
-    /*margin-top: auto;
-    margin-bottom: auto;*/
-    display: inline-block;
-    vertical-align: middle;
-
-    vertical-align: middle;
-    float:left;
-  }
   /*Responsive menu classes */
+  .menu {
+    border:none;
+  }
+  .logo{
+    float:left;
+    padding:0.25rem 0.5rem;
+    width: 15rem;
+  }
+  .spacer {
+    margin-top: auto;
+  }
   #main-menu {
-    content:"";
-    position:relative;
+    content: "";
     display: table;
+    position: relative;
     float:right;
   }
+  #main-nav-bar {
+    width:90%;
+    max-width:48em;
+    margin: 0 auto;
+    margin-top:2rem;
+    box-shadow: 0 2px 31px 0 rgba(0,0,0,.1);
+    border-radius: 4px;
+  }
+  #main-nav-container {
+    background-image: url("../img/hero-bg3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:25vh;
+  }
+}
+@media only screen and (min-width: 60em) { /* 960px */
+
 }
