@@ -11,7 +11,7 @@ html, body {
 }
 p {
   line-height: 2;
-  font-size: 1.125rem; /*18px*/
+  font-size: 1rem; /*1.125 = 18px*/
 }
 /*### Grid Setup ###*/
 .container {
@@ -95,8 +95,10 @@ p {
 .content-section{
   min-height: 70vh;
   padding-bottom: 3.125rem;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.2);
+  /*box-shadow: 0 2px 31px 0 rgba(0,0,0,.2);*/
+  max-width: 60em;
 }
+
 .content-section:nth-of-type(2n){
   box-shadow: none;
 }
@@ -131,6 +133,7 @@ p {
   width:90%;
   box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);
   margin:1.25rem auto;
+  text-align: center;
 }
 .offer-product * {
   width:100%;
@@ -138,6 +141,10 @@ p {
 }
 .of-pr-title {
   text-align: center;
+}
+.of-pr-image {
+  height:15.625rem;
+
 }
 
 /*Membership*/
@@ -242,9 +249,10 @@ p {
 }
 #contact-form {
   width:95%;
-  margin:0 auto;
+  margin-left: auto;
+  margin-right:auto;
   padding:1.25rem;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);
+  /*box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);*/
 }
 .contact-inputs {
   width:90%;
@@ -324,10 +332,86 @@ p {
   #main-nav-container {
 
   }
+  /*About us*/
+  #ab-us-description {
+    width:45%;
+    float:left;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
+  #ab-us-image {
+    width:45%;
+    float:right;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
+  /*What we offer*/
+  .offer-product {
+    width:45%;
+    float:left;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
+
+
+  /*CBNE Store*/
+  .store-product {
+    width:45%;
+    float:left;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
+
+  /*Contact Us*/
+  #contact-description {
+    width:45%;
+    float:left;
+    margin:0;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
+  #contact-form {
+    width:45%;
+    float:right;
+    height:100%;
+    margin-left:2.5%;
+    margin-right: 2.5%;
+  }
   /*offer-product make width 45%*/
   /*store-product make row of 2 then 3*/
   /*float contact form and description into 2 columns*/
 }
 @media only screen and (min-width: 60em) { /* 960px */
 
+  /*CBNE Store*/
+  .store-product {
+    width:30%;
+    float:left;
+    margin-left:1.5%;
+    margin-right: 1.5%;
+  }
+}
+
+@media only screen and (min-width: 64em) { /* 1024px */
+  /*Responsive Menu and Header*/
+  #main-nav-bar {
+    padding:0;
+  }
+  .menu {
+    float:right;
+    margin:1.25rem auto;
+    padding-right:0.625rem;
+  }
+  .logo {
+    margin-left:0.625rem;
+    margin-top:0.625rem;
+    margin-bottom:0.625rem;
+    float:left;
+  }
+
+  /*Footer*/
+  #footer-content .menu {
+    float: none;
+    padding:0;
+  }
 }
