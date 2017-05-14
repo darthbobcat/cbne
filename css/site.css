@@ -92,11 +92,20 @@ p {
   width:90%;
 }
 /*Main content common styling*/
+#main-content .row {
+  /*border-top: 1px solid #4a4a4a;*/
+}
 .content-section{
-  min-height: 70vh;
+  min-height: 50vh;
   padding-bottom: 3.125rem;
+  background: #fff;
   /*box-shadow: 0 2px 31px 0 rgba(0,0,0,.2);*/
-  max-width: 60em;
+  max-width: 70em;
+  margin-left:auto;
+  margin-right: auto;
+  content:"";
+  display: table;
+  clear: both;
 }
 
 .content-section:nth-of-type(2n){
