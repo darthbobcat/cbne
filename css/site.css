@@ -3,15 +3,24 @@ html, body {
   margin:0;
   height: 0;
   font-size: 100%;
-
 }
-
+@import url('https://fonts.googleapis.com/css?family=Lato|Lora');
 * {
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 p {
   line-height: 2;
-  font-size: 1rem; /*1.125 = 18px*/
+  font-size: 1.125rem; /*18px*/
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lora', serif;
+  font-weight: normal;
 }
 /*### Grid Setup ###*/
 .container {
@@ -31,396 +40,235 @@ p {
   display: table;
   clear: both;
 }
-/*Responsive menu classes */
-.menu {
+.content-section {
+  max-width:60em;
+  margin:0 auto;
+  content:"";
+  display: table;
+  clear: both;
+}
+/*Main Navigation*/
+.mn-menu {
   list-style: none;
   padding:0;
   text-align: center;
   display: none;
 }
-.menu-item {
-  padding:0.5rem 0.5rem;
+.mn-menu-item {
+  padding:0.625rem;
 }
-.menu-item:hover {
+.mn-menu-item:hover {
   text-decoration: underline;
 }
-.menu-item:active {
+.mn-menu-item:active {
   text-decoration: overline;
 }
-.mn-it-link {
+.mn-menu-item > a {
   color:#000;
   text-decoration: none;
 }
-.mn-it-active {
-  color:red;
+.mn-active a {
+  color:#ffb43a;
 }
 .responsive-menu-button *{
   vertical-align: middle;
 }
 .responsive-menu-button {
   display: block;
-  margin:0.25rem auto;
-  margin-top: 0.625rem;
-  text-align: center;
-}
-/*Header styling*/
-.logo {
-  max-height:3.125rem;
-  max-width:95%;
-  display: block;
   margin:0 auto;
-}
-#main-nav-bar {
-  width:100%;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.1);
-  padding-top: 1rem;
-  padding-bottom:0.5rem;
-  background-color: #fff;
-  content:"";
-  display: table;
-}
-#main-nav-container {
-  min-height:100vh;
-  background-image: url("../img/circles-and-roundabouts.png");
-  background-repeat: repeat;
-  background-position: center;
-
-}
-#hero-panel {
   text-align: center;
-  margin: 15% auto auto auto;
+}
+#main-navigation{
+  text-align: center;
+  background-color: #fff;
+}
+.mn-logo {
+  margin:0.625rem;
   width:90%;
 }
-/*Main content common styling*/
-#main-content .row {
-  /*border-top: 1px solid #4a4a4a;*/
+#main-navigation-hero {
+  background: #4389e4;
+  min-height:60vh;
 }
-.content-section{
-  min-height: 50vh;
-  padding-bottom: 3.125rem;
-  background: #fff;
-  /*box-shadow: 0 2px 31px 0 rgba(0,0,0,.2);*/
-  max-width: 70em;
-  margin-left:auto;
-  margin-right: auto;
+#main-navigation-wrapper {
+  width:100%;
+  background-color: #fff;
+}
+/* Main Hero */
+#main-hero-wrapper {
+  text-align: center;
+}
+#main-hero {
+  margin-top:7%; /* Warning: Magic number*/
+  margin-bottom:7%; /* Warning: Magic number*/
+  color:#fff;
+}
+#mh-calltoaction {
+  display:inline-block;
+  padding:0.625rem 1.25rem;
+  background-color: #ffb43a;
+  border-radius: 50px;
+  text-decoration: none;
+  color:#000;
+}
+#mh-calltoaction:focus {
+  outline: none;
+}
+#mh-calltoaction:hover {
+  /*background-color: #F19500;*/
+  box-shadow: 0 0 20px #4a5767;
+}
+#mh-calltoaction:active {
+  /*background-color: #B87200;*/
+  box-shadow: inset 0 0 10px #4a5767;
+}
+/* What We Offer */
+#what-we-offer{
   content:"";
   display: table;
   clear: both;
+  margin-top:-1.25rem;
 }
-
-.content-section:nth-of-type(2n){
-  box-shadow: none;
-}
-
-/*About us*/
-#about-us {
-  text-align: center;
-}
-#ab-us-title {
-  padding:1.25rem; /*20px*/
-  text-align: center;
-}
-#ab-us-description {
-  padding:1.25rem;
-  text-align: left;
-}
-#ab-us-image {
-  width:100%;
-  max-width: 31.25rem;
-  padding:1.25rem;
-}
-
-/*What we offer*/
-#offer-title {
-  text-align: center;
-  padding:1.25rem;
-}
-#offer-description {
-  padding:1.25rem;
-}
-.offer-product {
-  width:90%;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);
-  margin:1.25rem auto;
-  text-align: center;
-}
-.offer-product * {
-  width:100%;
-  padding:1.25rem;
-}
-.of-pr-title {
-  text-align: center;
-}
-.of-pr-image {
-  height:15.625rem;
-
-}
-
-/*Membership*/
-#membership {
-  text-align: center;
-}
-#membership-title {
-  padding:1.25rem; /*20px*/
-  text-align: center;
-}
-#membership-description {
-  padding:1.25rem;
-  text-align: left;
-}
-#membership-form {
-  display:inline-block;
-  padding:0.625rem 1rem;
-  margin:0 auto 1.25rem auto;
-  border:1px solid transparent;
-  text-decoration: none;
-  background-color: #4479BA;
-  color: #fff;
-  user-select:none;
-}
-#membership-form:hover {
-  background-color: #356094;
-  border: solid 1px #2A4E77;
-}
-#membership-form:active {
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	background-color: #2E5481;
-	border: solid 1px #203E5F;
-}
-
-/*The CBNE Store*/
-#store-title {
-  text-align: center;
-  padding:1.25rem;
-}
-#store-description {
-  padding:1.25rem;
-}
-
-.store-product {
-  width:90%;
-  box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);
-  margin:1.25rem auto;
-  text-align: center;
-}
-.st-pr-image {
-  width:100%;
-}
-.st-pr-title {
-  text-align: center;
-  padding:1.25rem;
+#wwo-title {
   margin:0;
-}
-.st-pr-divider {
-  width:50%;
-  text-align: center;
-  background-color:#4a4a4a;
-}
-.st-pr-price {
-  display: inline-block;
-  margin: 1.25rem 0 0 0;
-  font-size: 1.5625rem;
-  /*background-color: red;*/
-}
-.st-pr-description {
-  text-align: left;
   padding:1.25rem;
-  margin: 0;
-}
-.st-pr-more {
-  display:inline-block;
-  padding:0.625rem 1rem;
-  margin:0 auto 1.25rem auto;
-  border:1px solid transparent;
-  text-decoration: none;
-  background-color: #4479BA;
-  color: #fff;
-  user-select:none;
-}
-.st-pr-more:hover {
-  background-color: #356094;
-  border: solid 1px #2A4E77;
-}
-.st-pr-more:active {
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	background-color: #2E5481;
-	border: solid 1px #203E5F;
-}
-/*Contact Us*/
-#contact-us {
-  text-align: center;
-}
-#contact-title {
-  text-align: center;
-}
-#contact-description {
-  padding:1.25rem;
-}
-#contact-form {
-  width:95%;
-  margin-left: auto;
-  margin-right:auto;
-  padding:1.25rem;
-  /*box-shadow: 0 2px 31px 0 rgba(0,0,0,.15);*/
-}
-.contact-inputs {
-  width:90%;
-  padding:0.625rem;
   background-color: #fff;
-  border:1px solid #d8d8d8;
-  border-bottom: none;
-}
-.contact-inputs:last-of-type {
-  border-bottom: 1px solid #d8d8d8;
-  margin-bottom: 0.625rem;
-}
-.contact-inputs:focus {
-  background-color: #dbe9f1;
-}
-#contact-submit {
-  display:block;
-  width:90%;
-  max-width: 21.875rem;
-  padding:0.625rem 1rem;
-  margin:0 auto;
-  border:1px solid transparent;
-  background-color: #4479BA;
-  color: #fff;
-  user-select:none;
-}
-#contact-submit:hover {
-  background-color: #356094;
-  border: 1px solid #2A4E77;
-}
-#contact-submit:active {
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-	background-color: #2E5481;
-	border: 1px solid #203E5F;
-}
-
-/*Footer */
-#footer-content {
   text-align: center;
-  padding-bottom: 1.5625rem;
-  background-color: #d8d8d8;
-  z-index: -1;
+  color:#4389e4
 }
-#footer-content .menu {
-  display: block;
-  margin-bottom: 1.5625rem;
+.offer-column {
+  background-color: #fff;
+  width:100%;
+  padding:1.25rem;
 }
-#footer-content .menu-item {
-  font-size: 0.75rem;
+.offer-title {
+  color:#4389e4;
+  text-align: center;
 }
-#designed-by {
+.offer-image{
+  width:100%;
+}
+.offer-content {
+  width:100%;
+  margin:0;
+  padding: 1.25rem;
+  padding-left: 0;
+}
+/*About Us, Membership*/
+#main-content {
+  background-color: #dddbd9;
+  /*#e9e9e9;*/
+}
+.general-information {
+  background-color: #fff;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding:0 1.25rem 2.5rem 1.25rem;
+  content: "";
+  display: table;
+  clear: both;
+}
+.gi-title {
+  text-align: center;
+  color:#4389e4;
+}
+.gi-image {
+  width: 100%;
+  margin-top:0.625rem;
+  /*padding:1.25rem 0.625rem;*/
+}
+.gi-content {
+  width:100%;
+  margin:0;
+  padding: 1.25rem;
+}
+.download-forms {
+  display:table;
+  clear:both;
+  padding:0.625rem 1.25rem;
+  margin:1.25rem;
+  background-color: #ffb43a;
+  border-radius: 50px;
   text-decoration: none;
   color:#000;
-  font-style: italic;
-  font-weight: 300;
 }
-
+.download-forms:focus {
+  outline: none;
+}
+.download-forms:hover {
+  box-shadow: 0 0 20px #4a5767;
+}
+.download-forms:active {
+  /*background-color: #B87200;*/
+  box-shadow: inset 0 0 10px #4a5767;
+}
 /* Media Queries */
 @media only screen and (min-width: 33.75em) {  /* 540px */
 
 }
 
 @media only screen and (min-width: 48em) {  /* 768px */
-  /*Responsive Menu and Header*/
+  /* Main Navigation */
   .responsive-menu-button {
     display: none;
   }
-  .menu {
-    content:"";
-    display: table !important /*Jquery fadetoggle fix*/;
-    margin:1.25rem auto 1rem auto;
+  .mn-menu {
+    display: block !important; /*jquery slidetoggle fix*/
   }
-  .menu-item {
-    display: block;
-    float: left;
+  .mn-menu-item {
+    display: inline-block;
   }
-  #main-nav-container {
+  .mn-logo {
+    width:50%;
+  }
 
-  }
-  /*About us*/
-  #ab-us-description {
-    width:45%;
+  /*What We Offer*/
+  .offer-column {
+    width:50%;
     float:left;
-    margin-left:2.5%;
-    margin-right: 2.5%;
-  }
-  #ab-us-image {
-    width:45%;
-    float:right;
-    margin-left:2.5%;
-    margin-right: 2.5%;
-  }
-  /*What we offer*/
-  .offer-product {
-    width:45%;
-    float:left;
-    margin-left:2.5%;
-    margin-right: 2.5%;
   }
 
 
-  /*CBNE Store*/
-  .store-product {
-    width:45%;
+  /*About us, Membership*/
+  /*.gi-title{
+    text-align: left;
+    width:50%;
+    margin-left:50%;
+    padding:0 1.25rem;
+  }*/
+  .gi-image {
+    width: 50%;
     float:left;
-    margin-left:2.5%;
-    margin-right: 2.5%;
   }
-
-  /*Contact Us*/
-  #contact-description {
-    width:45%;
+  .gi-content {
+    width:50%;
+    margin-top:0;
+    padding: 0 1.25rem;
     float:left;
-    margin:0;
-    margin-left:2.5%;
-    margin-right: 2.5%;
   }
-  #contact-form {
-    width:45%;
-    float:right;
-    height:100%;
-    margin-left:2.5%;
-    margin-right: 2.5%;
-  }
-  /*offer-product make width 45%*/
-  /*store-product make row of 2 then 3*/
-  /*float contact form and description into 2 columns*/
 }
 @media only screen and (min-width: 60em) { /* 960px */
 
-  /*CBNE Store*/
-  .store-product {
-    width:30%;
-    float:left;
-    margin-left:1.5%;
-    margin-right: 1.5%;
+  /* Main Navigation */
+  #main-navigation {
+    content:"";
+    display: table;
+    clear: both;
+    /*background: #4a4a4a;*/
   }
-}
-
-@media only screen and (min-width: 64em) { /* 1024px */
-  /*Responsive Menu and Header*/
-  #main-nav-bar {
-    padding:0;
-  }
-  .menu {
+  .mn-menu {
+    max-width: 75%;
     float:right;
-    margin:1.25rem auto;
-    padding-right:0.625rem;
+    /*background: #fff;*/
   }
-  .logo {
-    margin-left:0.625rem;
-    margin-top:0.625rem;
-    margin-bottom:0.625rem;
+  .mn-menu-item {
+    padding:0.3125rem;
+  }
+  .mn-logo {
+    width: 25%;
+    margin:0.875rem 0 0.875rem 0.625rem;
     float:left;
+    /*background: #fff;*/
   }
 
-  /*Footer*/
-  #footer-content .menu {
-    float: none;
-    padding:0;
-  }
 }

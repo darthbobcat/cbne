@@ -1,6 +1,6 @@
 var responsiveToggle = function(){
-    $('#fixed-nav-menu-button').on('click',function(){
-      $('#main-nav-menu').slideToggle();
+    $('#mobile-menu').on('click',function(){
+      $('#mn-menu-actual').slideToggle();
     });
 }
 $( document ).ready(function(){
