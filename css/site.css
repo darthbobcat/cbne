@@ -284,6 +284,27 @@ h6 {
   /*background-color: #B87200;*/
   box-shadow: inset 0 0 10px #4a5767;
 }
+
+/*Footer*/
+#main-footer {
+  background-color: #fff;
+  /*margin:0;
+  padding:0;*/
+  text-align: center;
+}
+#footer-menu{
+  text-align: center;
+  list-style: none;
+  margin:0 auto;
+  padding:1.25rem 0;
+}
+#footer-menu .mn-menu-item {
+  display: inline-block;
+}
+#credits {
+  font-size: 0.875rem;
+  padding-bottom: 1.25rem;
+}
 /* Media Queries */
 @media only screen and (min-width: 33.75em) {  /* 540px */
 
