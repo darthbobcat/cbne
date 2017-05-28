@@ -68,16 +68,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mn-menu-item:hover {
-  text-decoration: underline;
+  background-color:#E9e9e9;
 }
 
 .mn-menu-item:active {
-  text-decoration: overline;
+  background-color:#DDDBD9;
 }
 
 .mn-menu-item>a {
   color: #000;
   text-decoration: none;
+
 }
 
 .mn-active a {
@@ -97,6 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 #main-navigation {
   text-align: center;
   background-color: #fff;
+
 }
 
 .mn-logo {
@@ -106,12 +108,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #main-navigation-hero {
   background: #4389e4;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 #main-navigation-wrapper {
   width: 100%;
   background-color: #fff;
+  position:fixed;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -122,9 +127,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #main-hero {
-  margin-top: 7%;
+  margin-top: 12%;
   /* Warning: Magic number*/
-  margin-bottom: 7%;
+  margin-bottom: 12%;
   /* Warning: Magic number*/
   color: #fff;
 }
@@ -142,9 +147,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #000;
 }
 
-#mh-calltoaction:focus {
+/*#mh-calltoaction:focus {
   outline: none;
-}
+}*/
 
 #mh-calltoaction:hover {
   /*background-color: #F19500;*/
