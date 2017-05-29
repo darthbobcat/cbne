@@ -1,8 +1,8 @@
-var responsiveToggle = function(){
-    $('#mobile-menu').on('click',function(){
-      $('#mn-menu-actual').slideToggle();
-    });
+function responsiveToggle () {
+  $('#mobile-menu').on('click', function () {
+    $('#nav-bar-menu').slideToggle()
+  })
 }
-$( document ).ready(function(){
-  responsiveToggle();
-});
+$(document).ready(function () {
+  responsiveToggle()
+})

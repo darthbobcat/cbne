@@ -44,7 +44,7 @@
      units="mm"
      showborder="false"
      inkscape:zoom="2.0988795"
-     inkscape:cx="157.63917"
+     inkscape:cx="182.17607"
      inkscape:cy="-9.9720126"
      inkscape:window-x="1680"
      inkscape:window-y="27"
@@ -52,19 +52,19 @@
      inkscape:current-layer="svg22" />
   <g
      id="g73"
-     transform="translate(-5.8208282)">
+     transform="translate(-5.8208282,-0.26458318)">
     <text
        id="text12"
        font-size="8.467"
        font-weight="700"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46665955px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.35299999"
        x="4.9168844"
-       y="6.2838488">
+       y="7.3421812">
       <tspan
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:8.46665955px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
          id="tspan10"
          x="4.9168844"
-         y="6.2838488">COMPUTERBANK</tspan>
+         y="7.3421812">COMPUTERBANK</tspan>
     </text>
     <text
        id="text16"
@@ -72,13 +72,13 @@
        font-weight="400"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64443922px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#4a5767;stroke-width:0.35299999"
        x="42.117001"
-       y="14.030074">
+       y="13.500908">
       <tspan
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64443922px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"
          id="tspan14"
          font-size="4.939"
          x="42.117001"
-         y="14.030074">NEW ENGLAND</tspan>
+         y="13.500908">NEW ENGLAND</tspan>
     </text>
   </g>
   <path

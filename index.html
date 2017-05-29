@@ -5,160 +5,145 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBNE Redesign</title>
+  <title>COMPUTERBANK New England</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/site.min.css">
 </head>
 
 <body>
   <div class="container">
-    <header id="main-navigation-hero">
-      <div class="row" id="main-navigation-wrapper">
-        <nav class="content-section" id="main-navigation">
-          <object type="image/svg+xml" data="img/web-logo.svg" class="mn-logo">Your browser lacks SVG support. Get Chrome or Firefox</object>
-          <span class="responsive-menu-button" id="mobile-menu"><i class="material-icons">menu</i> Menu</span>
-          <ul class="mn-menu" id="mn-menu-actual">
-            <li class="mn-menu-item mn-active"><a href="#">Home</a></li>
-            <li class="mn-menu-item"><a href="#">What we offer</a></li>
-            <li class="mn-menu-item"><a href="#">About Us</a></li>
-            <li class="mn-menu-item"><a href="#membership">Application Forms</a></li>
-            <li class="mn-menu-item"><a href="#">The CBNE Store</a></li>
-            <li class="mn-menu-item"><a href="#">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="row" id="main-hero-wrapper">
-        <div id="main-hero" class="content-section">
-          <h1 id="mh-title">Welcome to CBNE</h1>
-          <p id="mh-description">
-            We recycle e-waste, and provide low cost access to computer equipment for those who need it most.
-          </p>
-          <a href="#" id="mh-calltoaction">Learn More</a>
-        </div>
+    <header class="extended-row">
+      <nav class="nav-bar">
+        <object type="image/svg+xml" data="img/web-logo.svg" class="logo">Your browser lacks SVG support. Get Chrome or Firefox</object>
+        <span id="mobile-menu"><i class="material-icons">menu</i> Menu</span>
+        <ul class="menu" id="nav-bar-menu">
+          <li class="active-link"><a href="#">Home</a></li>
+          <li><a href="#what-we-offer">What we offer</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#membership">Application Forms</a></li>
+          <li ><a href="#cbne-store">The CBNE Store</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="one-column text-center hero-section">
+        <h1>Welcome to CBNE</h1>
+        <p>
+          We recycle e-waste, and provide low cost access to computer equipment for those who need it most.
+        </p>
+        <a href="#what-we-offer" class="anchor-button">Learn More</a>
       </div>
     </header>
-    <main id="main-content">
-      <div class="content-section">
-        <div id="what-we-offer">
-          <h1 id="wwo-title">What We Offer</h1>
-          <p id="store-description">
+    <main class="pullup">
+      <div class="row">
+        <div class="one-column text-center" id="what-we-offer">
+          <h1 class="content-title">What We Offer</h1>
+          <p>
             We offer low cost computers to concession card holders (pensioner, disability, and low income), students, and not for profit community groups. Our goal is to help cross the digital and economic divide in Australia. Our computers are all refurbished from
             donated stock. We are a licensed Microsoft refurbisher, and we offer either Microsoft Windows 10, or the free Ubuntu operating system. All our machines come internet ready. All machines come with your choice of the Microsoft Office Suite,
             or the free Libreoffice.
           </p>
-          <div class="offer-column">
-            <h2 class='offer-title'>Desktops</h2>
-            <img src="img/desktop-product.jpg" class="offer-image" />
-            <p class="offer-content">
-              Our standard desktop system costs $100 ($110 with Microsoft Office Suite). It comes with the following hardware at a minimum:
-              <ul>
-                <li>Dual core processor</li>
-                <li>2 GB of RAM</li>
-                <li>80GB hard drive</li>
-                <li>DVD Drive</li>
-                <li>Keyboard, mouse, and LCD Screen</li>
-                <li>Your choice of Windows 10 or Ubuntu LTS</li>
-                <li>Microsoft Office Suite (Additional cost of $10) or the free Libreoffice suite</li>
-              </ul>
-            </p>
-          </div>
-          <div class="offer-column">
-            <h2 class='offer-title'>Laptops</h2>
-            <img src="img/laptop-product.jpg" class="offer-image" />
-            <p class="offer-content">
-              We are usually able to offer laptop systems. Like the Desktop systems, these come with either Windows 10 or Ubuntu LTS. They also come with MS Office Suite or Libreoffice preinstalled. Unfortunately we cannot guarantee minimum specifications. We are able
-              to guarantee that each laptop is configured to run responsively and will be fit for service.
-            </p>
-          </div>
         </div>
-        <div class="general-information" id="about-us">
-          <h1 class="gi-title">About Us</h1>
-          <img src="img/about-us.jpg" class="gi-image" />
-          <p class="gi-content">
-            This was beyond the boys, and they let it slip by, words and thoughts, as a mere senile wandering in the narrative. "Our food-getters were called freemen. This was a joke. We of the ruling classes owned all the land, all the machines, everything. These
-            food-getters were our slaves. We took almost all the food they got, and left them a little so that they might eat, and work, and get us more food&mdash;"
+        <div class="two-column">
+          <h2 class="content-title">Desktops</h2>
+          <img src="img/desktop-product.jpg" alt="a desktop computer" class="content-image"/>
+          <p>
+            Our standard desktop system costs $100 ($110 with Microsoft Office Suite). It comes with the following hardware at a minimum:
           </p>
-        </div>
-        <div class="general-information" id="membership">
-          <h1 class="gi-title">Application Forms</h1>
-          <p class="gi-content">
-            This was beyond the boys, and they let it slip by, words and thoughts, as a mere senile wandering in the narrative. "Our food-getters were called freemen. This was a joke. We of the ruling classes owned all the land, all the machines, everything. These
-            food-getters were our slaves. We took almost all the food they got, and left them a little so that they might eat, and work, and get us more food&mdash;" "I'd have gone into the forest and got food for myself," Hare-Lip announced; "and if
-            any man tried to take it away from me, I'd have killed him."
-          </p>
-
-          <ul class="application-forms gi-content">
-            <li class="af-download"><a href="#">Membership</a></li>
-            <li class="af-download"><a href="#">Computer Acquisition for Individuals</a></li>
-            <li class="af-download"><a href="#">Computer Acquisition for Organisations</a></li>
-            <li class="af-download"><a href="#">Terms and Conditions</a></li>
+          <ul>
+            <li>Dual core processor</li>
+            <li>2 GB of RAM</li>
+            <li>80GB hard drive</li>
+            <li>DVD Drive</li>
+            <li>Keyboard, mouse, and LCD Screen</li>
+            <li>Your choice of Windows 10 or Ubuntu LTS</li>
+            <li>Microsoft Office Suite (Additional cost of $10) or the free Libreoffice suite</li>
           </ul>
         </div>
-        <div id="cbne-store">
-          <h1 id="store-title">The CBNE Store</h1>
-          <p id="store-description">
-            On this the White Rabbit blew three blasts on the trumpet, and then unrolled the parchment scroll, and read as follows:&mdash; 'The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite
-            away!'
+        <div class="two-column text-center">
+          <h2 class="content-title">Laptops</h2>
+          <img src="img/laptop-product.jpg" alt="a laptop computer" class="content-image"/>
+          <p class="text-left">
+            We are usually able to offer laptop systems. Like the Desktop systems, these come with either Windows 10 or Ubuntu LTS. They also come with MS Office Suite or Libreoffice preinstalled. Unfortunately we cannot guarantee minimum specifications. We are able
+            to guarantee that each laptop is configured to run responsively and will be fit for service.
           </p>
-          <div class="store-column">
-            <h2 class="product-title">Hard Drives</h2>
-            <img src="img/product1.jpg" class="product-image" />
-            <p class="product-description">
-              "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
-              I answered, "and that is why I think that it is the best route for our escape."
-            </p>
-
-          </div>
-          <div class="store-column">
-            <h2 class="product-title">Hard Drive Magnets</h2>
-            <img src="img/product1.jpg" class="product-image" />
-            <p class="product-description">
-              "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
-              I answered, "and that is why I think that it is the best route for our escape."
-            </p>
-
-          </div>
-          <div class="store-column">
-            <h2 class="product-title">CPU Fans</h2>
-            <img src="img/product1.jpg" class="product-image" />
-            <p class="product-description">
-              "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
-              I answered, "and that is why I think that it is the best route for our escape."
-            </p>
-
-          </div>
-        </div>
-        <div id="contact-us">
-          <h1 class="product-title">Get in touch</h1>
-          <p class="gi-content">
-            "I am--I certainly am," answered the little man sorrowfully; "but it was the only thing I could do. Sit down, please, there are plenty of chairs; and I will tell you my story." So they sat down and listened while he told the following tale. "I was born
-            in Omaha--" "Why, that isn't very far from Kansas!" cried Dorothy. "No, but it's farther from here," he said, shaking his head at her sadly. "When I grew up I became a ventriloquist, and at that I was very well trained by a great master.
-          </p>
-          <form class="gi-content">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your name..">
-
-            <label for="email">Your Email Address</label>
-            <input type="email" id="email" name="emailaddress" placeholder="Your email address">
-            <label for="subject">The Message</label>
-            <textarea id="subject" name="subject" placeholder="Your message"></textarea>
-
-            <input type="submit" value="Submit" id="submit-contact">
-          </form>
         </div>
       </div>
+      <div class="row" id="about-us">
+        <h1 class="content-title">About Us</h1>
+        <img src="img/about-us.jpg" alt="a photo of the computerbank" class="two-column" />
+        <p class="two-column">
+          Started in June 2002, we are a fully volunteer staffed registered not for profit association. Our mission is two fold. We help provide computers to disadvantaged groups and individuals at a price that is affordable. We also help to reduce the amount of e-waste that makes it's way into landfill.
+        </p>
+      </div>
+      <div class="row" id="membership">
+        <h1 class="content-title">Application Forms</h1>
+        <p class="two-column">
+          This was beyond the boys, and they let it slip by, words and thoughts, as a mere senile wandering in the narrative. "Our food-getters were called freemen. This was a joke. We of the ruling classes owned all the land, all the machines, everything. These
+          food-getters were our slaves. We took almost all the food they got, and left them a little so that they might eat, and work, and get us more food&mdash;" "I'd have gone into the forest and got food for myself," Hare-Lip announced; "and if
+          any man tried to take it away from me, I'd have killed him."
+        </p>
+        <ul class="two-column forms-list">
+          <li class="anchor-button"><a href="#" >Membership</a></li>
+          <li class="anchor-button"><a href="#" >Computer Acquistion for Individuals</a></li>
+          <li class="anchor-button"><a href="#" >Computer Acquistion for Organisations</a></li>
+          <li class="anchor-button"><a href="#" >Terms and Conditions</a></li>
+        </ul>
+      </div>
+      <div class="row" id="cbne-store">
+        <h1 class="content-title">The CBNE Store</h1>
+        <div class="three-column">
+          <h2 class="content-title">Hard Drives</h2>
+          <img src="img/product1.jpg" alt="a hard drive" class="content-image"/>
+          <p>
+            "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
+            I answered, "and that is why I think that it is the best route for our escape."
+          </p>
+        </div>
+        <div class="three-column">
+          <h2 class="content-title">High Strength Magnets</h2>
+          <img src="img/product1.jpg" alt="a hard drive" class="content-image"/>
+          <p>
+            "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
+            I answered, "and that is why I think that it is the best route for our escape."
+          </p>
+        </div>
+        <div class="three-column">
+          <h2 class="content-title">CPU Fans</h2>
+          <img src="img/product1.jpg" alt="a hard drive" class="content-image"/>
+          <p>
+            "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
+            I answered, "and that is why I think that it is the best route for our escape."
+          </p>
+        </div>
+      </div>
+      <div class="row" id="contact-us">
+        <h1 class="content-title">Get in touch</h1>
+        <p class="two-column">
+          "I am--I certainly am," answered the little man sorrowfully; "but it was the only thing I could do. Sit down, please, there are plenty of chairs; and I will tell you my story." So they sat down and listened while he told the following tale. "I was born
+          in Omaha--" "Why, that isn't very far from Kansas!" cried Dorothy. "No, but it's farther from here," he said, shaking his head at her sadly. "When I grew up I became a ventriloquist, and at that I was very well trained by a great master.
+        </p>
+        <form class="two-column contact-form">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name..">
+          <label for="email">Your Email Address</label>
+          <input type="email" id="email" name="emailaddress" placeholder="Your email address">
+          <label for="subject">The Message</label>
+          <textarea id="subject" name="subject" placeholder="Your message"></textarea>
+          <input type="submit" value="Submit" id="submit-contact" class="contact-submit">
+        </form>
+      </div>
     </main>
-    <footer id="main-footer">
-      <ul id="footer-menu">
-        <li class="mn-menu-item mn-active"><a href="#">Home</a></li>
-        <li class="mn-menu-item"><a href="#">What we offer</a></li>
-        <li class="mn-menu-item"><a href="#">About Us</a></li>
-        <li class="mn-menu-item"><a href="#membership">Application Forms</a></li>
-        <li class="mn-menu-item"><a href="#">The CBNE Store</a></li>
-        <li class="mn-menu-item"><a href="#">Contact Us</a></li>
+    <footer class="extended-row">
+      <ul class="one-column footer-menu">
+        <li class="active-link"><a href="#">Home</a></li>
+        <li><a href="#what-we-offer">What we offer</a></li>
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#membership">Application Forms</a></li>
+        <li ><a href="#cbne-store">The CBNE Store</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
       </ul>
-      <p id="credits">
-        Designed and Developed by Shaun Taylor
+      <p class="one-column credits">
+        Site designed and developed by Shaun Taylor
       </p>
     </footer>
   </div>
