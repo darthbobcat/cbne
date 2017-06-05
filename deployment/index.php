@@ -132,14 +132,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="three-column">
-          <h2 class="content-title">CPU Fans</h2>
-          <img src="img/product1.jpg" alt="a hard drive" class="content-image"/>
-          <p>
-            "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
-            I answered, "and that is why I think that it is the best route for our escape."
-          </p>
-        </div> -->
       </div>
       <div class="row" id="contact-us">
         <h1 class="content-title">Get in touch</h1>
@@ -154,6 +146,35 @@
             We can also be emailed at <a href="mailto:cbne.uralla@gmail.com">cbne.uralla@gmail.com</a>, or you can use this form to get in touch. We look forward to hearing from you.
           </p>
         </div>
+        <?php
+            $name = $_POST['name'];
+            $email = $_POST['email'];
+            $message = $_POST['message'];
+            $headers = "From: info@cbne.org.au\r\nReply-to:$email";
+            $to = 'deucalion59@yahoo.com.au';
+            $subject = 'Hello';
+            $human = $_POST['human'];
+
+            $body = "From: $name\n E-Mail: $email\n Message:\n $message\n";
+            function alert($mesg){
+              echo "<script type='text/javascript'>alert('$mesg');</script>";
+            }
+            if ($_POST['submit']) {
+              if ($name != '' && $email != '') {
+                  if ($human == '4') {
+                      if (mail ($to, $subject, $body, $headers)) {
+          	       alert("Your message has been sent");
+          	    } else {
+          	        alert ("Something went wrong, go back and try again!");
+          	    }
+              	} else if ($_POST['submit'] && $human != '4') {
+              	    alert("You answered the anti-spam question incorrectly!");
+              	}
+                  } else {
+                      alert("You need to fill in all required fields!");
+                  }
+              }
+        ?>
         <form class="two-column contact-form" method="post" action="index.php">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Your name..">
