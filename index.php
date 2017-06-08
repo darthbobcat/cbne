@@ -132,14 +132,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="three-column">
-          <h2 class="content-title">CPU Fans</h2>
-          <img src="img/product1.jpg" alt="a hard drive" class="content-image"/>
-          <p>
-            "Does not this pierce your grandfather's territory?" I asked. "Yes," she answered, "but it is two hundred miles north of us; it is one of the waterways we crossed on the trip to Thark." "They would never suspect that we would try for that distant waterway,"
-            I answered, "and that is why I think that it is the best route for our escape."
-          </p>
-        </div> -->
       </div>
       <div class="row" id="contact-us">
         <h1 class="content-title">Get in touch</h1>
@@ -159,7 +151,7 @@
             $email = $_POST['email'];
             $message = $_POST['message'];
             $headers = "From: info@cbne.org.au\r\nReply-to:$email";
-            $to = 'deucalion59@yahoo.com.au';
+            $to = 'cbne.uralla@gmail.com';
             $subject = 'Hello';
             $human = $_POST['human'];
 
@@ -206,7 +198,7 @@
         <li><a href="#contact-us">Contact Us</a></li>
       </ul>
       <p class="one-column credits">
-        Site designed and developed by Shaun Taylor
+        Site designed and developed by <a href="mailto:sjustintaylor+cbne@gmail.com">Justin Taylor</a>
       </p>
       <p class="one-column credits">
         The graphic for the logo is PC by art shop from the Noun Project
@@ -215,7 +207,7 @@
   </div>
 
   <script src="js/jquery-3.2.0.min.js"></script>
-  <script src="js/site.js"></script>
+  <script src="js/site.min.js"></script>
 </body>
 
 </html>

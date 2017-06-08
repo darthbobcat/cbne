@@ -151,7 +151,7 @@
             $email = $_POST['email'];
             $message = $_POST['message'];
             $headers = "From: info@cbne.org.au\r\nReply-to:$email";
-            $to = 'deucalion59@yahoo.com.au';
+            $to = 'cbne.uralla@gmail.com';
             $subject = 'Hello';
             $human = $_POST['human'];
 
@@ -198,7 +198,7 @@
         <li><a href="#contact-us">Contact Us</a></li>
       </ul>
       <p class="one-column credits">
-        Site designed and developed by Shaun Taylor
+        Site designed and developed by <a href="mailto:sjustintaylor+cbne@gmail.com">Justin Taylor</a>
       </p>
       <p class="one-column credits">
         The graphic for the logo is PC by art shop from the Noun Project
