@@ -198,7 +198,7 @@
         <li><a href="#contact-us">Contact Us</a></li>
       </ul>
       <p class="one-column credits">
-        Site designed and developed by <a href="mailto:sjustintaylor+cbne@gmail.com">Justin Taylor</a>
+        Site designed and developed by <a href="www.sjustintaylor.com.au">Justin Taylor</a>
       </p>
       <p class="one-column credits">
         The graphic for the logo is PC by art shop from the Noun Project
