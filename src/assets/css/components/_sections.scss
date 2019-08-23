@@ -1,0 +1,21 @@
+.section__hero {
+  padding: 6rem 0 8rem;
+  text-align: center;
+  width: 100%;
+  background-color: $primary-color;
+  color: $white;
+}
+
+.section__content {
+  background-color: $white;
+  color: $rich-black;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 10px;
+  width: 60em;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.section__content--pullup {
+  margin-top: -3rem;
+}

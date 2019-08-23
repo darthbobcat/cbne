@@ -4,6 +4,10 @@
   padding-left: 0.5rem*4;
   padding-right: 0.5rem*4;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  @media screen and (min-width:37em) {
+    position: sticky;
+    top: 0;
+  }
 }
 
 .header__logo {
@@ -56,9 +60,9 @@
 .header__bounds {
   max-width: 60rem;
   min-height: 0.5rem*8;
+  margin: 0 auto;
   @media screen and (max-width:60em) {
     display: block;
-    margin: 0 auto;
   }
   @media screen and (min-width:60em) {
     position: sticky;
