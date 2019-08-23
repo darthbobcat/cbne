@@ -4,7 +4,8 @@
   "description": "Website refresh for CBNE",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,9 @@
   },
   "homepage": "https://github.com/sjustintaylor/cbne#readme",
   "dependencies": {
-    "parcel": "^1.12.3"
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {
+    "sass": "^1.22.10"
   }
 }
